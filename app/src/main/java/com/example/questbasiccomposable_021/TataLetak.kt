@@ -20,6 +20,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.LineHeightStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -103,7 +104,7 @@ fun TataLetakBoxColumnRow(modifier: Modifier){
             modifier = modifier
                 .fillMaxWidth()
                 .height(height = 110.dp)
-                .background(color = Color.Magenta),
+                .background(color = Color.Gray),
             contentAlignment = Alignment.Center
         ){
             Column {
@@ -128,19 +129,19 @@ fun TataLetakBoxColumnRow(modifier: Modifier){
             modifier = modifier
                 .fillMaxWidth()
                 .height(height = 300.dp)
-                .background(color = Color.Cyan),
+                .background(color = Color.Magenta),
             contentAlignment = Alignment.Center
         ){
             Image(painter = gambar,
                 contentDescription = null,
                 contentScale = ContentScale.Fit)
-            Text(text = "Who's This Guy ?",
-                fontSize = 50.sp,
-                color = Color.Red,
-                fontWeight = FontWeight.Bold,
-                fontFamily = FontFamily.Serif,
+            Text(text = "Who's This Guy !?",
+                fontSize = 23.sp,
+                color = Color.Black,
+                fontWeight = FontWeight.SemiBold,
+                fontFamily = FontFamily.SansSerif,
                 modifier = Modifier.align(
-                    alignment = Alignment.Center
+                    alignment = Alignment.BottomCenter
                 ))
         }
     }
