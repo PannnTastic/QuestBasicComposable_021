@@ -59,7 +59,7 @@ fun TataLetakBox(modifier: Modifier){
 }
 
 @Composable
-fun TataLetakCOlumnRow(modifier: Modifier){
+fun TataLetakColumnRow(modifier: Modifier){
     Column() {
         //Baris 1
         Row(modifier = modifier.fillMaxWidth(),
